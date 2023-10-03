@@ -1,0 +1,10 @@
+$ cat amfii2.sh
+#!/bin/bash
+IFS=","
+while read f1 f2
+do
+        echo "Scheme_Name is : $f1"
+        echo "Net_Asset_Value is  : $f2"
+done < file.tsv
+
+
